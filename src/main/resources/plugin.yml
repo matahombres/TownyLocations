@@ -1,0 +1,41 @@
+name: TownyLocations
+version: 1.0
+author: matahombress
+main: es.townylocations.TownyLocations
+api-version: 1.13
+depend: [Towny]
+softdepend: [Vault]
+prefix: TownyLocations
+commands:
+    townylocations:
+        description: TownyLocation main
+        aliases: [tloc, townylocation]
+permissions:
+    townylocations.*:
+        default: false
+        description: Gives access to all commands permissions
+        children:
+            townylocations.help: true
+            townylocations.self_plots: true
+            townylocations.other_plots: true
+            townylocations.teleport_plots: true
+            townylocations.other_teleport_plots: true
+            townylocations.reload: true
+    townylocations.help:
+        default: false
+        description: Permit see help
+    townylocations.self_plots:
+        default: false
+        description: Show self plots
+    townylocations.other_plots:
+        default: false
+        description: Show other plots
+    townylocations.teleport_plots:
+        default: false
+        description: Permit teleport with click
+    townylocations.other_teleport_plots:
+        default: false
+        description: Permit teleport with click
+    townylocations.reload:
+        default: false
+        description: Reload config

@@ -1,0 +1,34 @@
+#########################
+#    TownyLocations     #
+#   By matahombress     #
+#########################
+#
+####       SUGGESTION:
+####   IF YOU OPEN FILE WITH ONE EDITOR AS NOTEPADD++, SUBLIMETEXT...
+####   PUT LANGUAJE->JAVA
+#
+# prefix:                 Select prefix plugin
+# enable_custom_commands: Enabled shorcut for /townylocations self_plots and /townylocations otherplots <name>
+# self_plots_command:     Shorcut for /townylocations self_plots
+# other_plots_command:    Shorcut for /townylocations other_plots <name>
+# enable_hover:           If enable text when mouse go hover
+# text_hover:             If is enable hover into template, text show
+# enabled_teleport:       If have the permission -> Teleport to coord
+# amount_for_page:        Amount plots info for page
+# templace_plots:         Templace for the the plots information
+#       {number}  -> Numer plot (1,2,3,4,5...), the identificator
+#       {town}    -> Town name in which it is found the plot
+#       {x}{y}{z} -> The coordinates of the central block approximately and the coord tp
+#
+prefix: "&8&l[&4Towny&fLocations&8&l]&r "
+enable_custom_commands: true
+self_plots_command: /myplots
+other_plots_command: /theirsplots
+enabled_hover: true
+text_hover: "&bClick here to teleport {x} {y} {z}"
+enabled_teleport: true
+amount_for_page: 5
+templace_plots: 
+    - "&8&m------------------------------- "
+    - "&2Plot &a{number}  &8/  &8- &2Town: &a{town}"
+    - "&8        /   &8- &2Coord: &a{x} {y} {z}"
